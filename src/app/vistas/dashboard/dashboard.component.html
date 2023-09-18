@@ -1,0 +1,45 @@
+<app-header></app-header>
+<div class="container">
+
+    <h3>Lista de Pacientes</h3><br>
+
+    <button type="button" class="btn btn-primary">Nuevo Paciente</button>
+
+    <table class="table table">
+        <thead>
+            <tr>
+                <th scope="col">IdUsers</th>
+                <th scope="col">Nombres</th>
+                <th scope="col">Apellidos</th>
+                <th scope="col">DocumentoIdentidad</th>
+                <th scope="col">TipoDeDocumento</th>
+                <th scope="col">FechaNacimiento</th>
+                <th scope="col">Genero</th>
+                <th scope="col">Direccion</th>
+                <th scope="col">Departamento</th>
+                <th scope="col">Municipio</th>
+                <th scope="col">Telefono</th>
+                <th scope="col">Correo</th>
+                <th scope="col">Tipificacion</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let paciente of pacientes">
+                <th scope="row">{{paciente.IdUsers}}</th>
+                <td>{{paciente.Nombres}}</td>
+                <td>{{paciente.Apellidos}}</td>
+                <td>{{paciente.DocumentoIdentidad}}</td>
+                <td>{{paciente.TipoDeDocumento}}</td>
+                <td>{{paciente.FechaNacimiento}}</td>
+                <td>{{paciente.Genero}}</td>
+                <td>{{paciente.Direccion}}</td>
+                <td>{{paciente.Departamento}}</td>
+                <td>{{paciente.Municipio}}</td>
+                <td>{{paciente.Telefono}}</td>
+                <td>{{paciente.Correo}}</td>
+                <td>{{paciente.Tipificacion}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<app-footer></app-footer>
